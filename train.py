@@ -59,10 +59,6 @@ harmful_inst_train, harmful_inst_test = get_harmful_instructions()
 print("Downloading harmless instructions dataset...")
 harmless_inst_train, harmless_inst_test = get_harmless_instructions()
 
-########################################
-# 3) Tokenize sample data for training #
-########################################
-
 n_inst_train = min(256, len(harmful_inst_train), len(harmless_inst_train))
 
 # applies a chat like template to the instructions which helps the model understand the data
