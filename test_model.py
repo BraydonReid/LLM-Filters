@@ -1,4 +1,3 @@
-# This is a script that was used to test the models performance compared to the original
 import subprocess
 import re
 
@@ -41,7 +40,7 @@ def ask_model(model: str, question: str) -> str:
 
 
     lines = no_think.splitlines()
-    
+
     filtered = []
     # cleans up the output by removing empty lines and spinner/thinking lines
     for line in lines:
@@ -62,12 +61,19 @@ def main():
         for model in MODELS:
             f.write(f"===== Model: {model} =====\n\n")
             for idx, q in enumerate(QUESTIONS, 1):
-                f.write(f"{idx}. Q: {q}\n")
+                f.write(f"===============================================================================================================================================================================\n")
+                f.write(f"===============================================================================================================================================================================\n")
+
+                f.write(f"{idx}. Q: {q}\n\n")
                 try:
                     answer = ask_model(model, q)
                 except Exception as e:
                     answer = f"<Error: {e}>"
                 f.write(f"A: {answer}\n\n")
+            f.write(f"===============================================================================================================================================================================\n")
+            f.write(f"===============================================================================================================================================================================\n")
+            f.write(f"===============================================================================================================================================================================\n")
+
     print(f"✅ Results written to {out_path}")
 
 if __name__ == "__main__":
