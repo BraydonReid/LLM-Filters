@@ -2,7 +2,7 @@ import subprocess
 import re
 
 MODELS = [
-    "custom-deepseek:latest",
+    "deepseek-abl:latest",
     "deepseek-r1:7b"
 ]
 
