@@ -3,7 +3,7 @@
 
 We built this model to help understand the fragility of LLM models and how to better defend against Multi-turn prompt injection attacks.
 This repository displays the refusal directions and what it took to acheive it in order to modify a model to bypass it's preset refusal directions and display harmful responses. 
-The functionality of this model does fall short when it comes to having it fully trained.
+The functionality of this model does fall short when it comes to accurately answering all harmful prompts as it is not fine tuned on these subjects. 
 
 <ins>Running the Code</ins>
 
