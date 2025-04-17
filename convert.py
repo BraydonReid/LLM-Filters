@@ -3,7 +3,7 @@ import einops
 from transformer_lens import HookedTransformer
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-# loads the ablated model that was trained
+# loads the trained model that was trained
 hooked = HookedTransformer.from_pretrained_no_processing(
     "Qwen/Qwen-7B",
     local_files_only=True,
