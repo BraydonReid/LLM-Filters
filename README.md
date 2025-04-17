@@ -4,15 +4,33 @@ We built this model to help understand the fragility of LLM models and how to be
 
 <ins>Running the Code</ins>
 
-To run this you will need to download your desired model and follow the instructions in the code to adjust the paramaters effectively
+To run this, you will need to download your desired model and follow the instructions in the code to adjust the parameters effectively.
 
-you can this convert this to a gguf format by:
+1st step:
+Download the Large Language Model that you want to unfilter
+
+2nd Step:
+Run the training model with your model directory selected
+
+3rd Step:
+Use convert.py to convert the model back to a Hugging Face format
+
+4th Step: Convert to a gguf format
+You can convert this to a gguf format by:
 1. git clone https://github.com/ggerganov/llama.cpp
 2. cd llama.cpp
 3. pip install -r requirements.txt
-4. python llama.cpp/convert-hf-to-gguf.py ./phi3 --outfile output_file.gguf --outtype q8_0
+4. python convert_hf_to_gguf.py ./abliterated-deepseek-r1-7b --outfile deepseek(abliterated.gguf --outtype q8_0
 
-from here you will need to create a modelfile and than use that model file to add the model to ollama to run
+5th Step:
+You can then import this into Ollama by:
+1. create a modelfile
+2. Put the model file and gguf into the same directory
+3. run: ollama create deepseek-abl
+4. Then you can run the model by: ollama run deepseek-abl
+
+6th Step:
+After this, you run "run_test.py" to compare the results of the two models.
 
 
 <ins> Datasets: </ins> 
