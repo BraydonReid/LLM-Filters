@@ -19,9 +19,11 @@ from here you will need to create a modelfile and than use that model file to ad
 1. https://huggingface.co/datasets/mlabonne/harmless_alpaca
 2. https://huggingface.co/datasets/mlabonne/harmful_behaviors
 
-<ins>Resources used</ins>
+<ins>Resources Used</ins>
 
-https://huggingface.co/blog/mlabonne/abliteration
+Uncensor any LLM with abliteration: 
+
+   https://huggingface.co/blog/mlabonne/abliteration
 
 Derail Yourself: Multi-turn LLM Jailbreak Attack through Self-discovered Clues: 
    
