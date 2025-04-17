@@ -14,3 +14,6 @@ datasets:
 1. https://huggingface.co/datasets/mlabonne/harmless_alpaca
 2. https://huggingface.co/datasets/mlabonne/harmful_behaviors
    
+papers researched:
+1. https://huggingface.co/blog/mlabonne/abliteration
+2. 
