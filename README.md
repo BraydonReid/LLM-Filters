@@ -34,8 +34,8 @@ After this, you run "run_test.py" to compare the results of the two models.
 
 
 <ins> Datasets: </ins> 
-1. https://huggingface.co/datasets/mlabonne/harmless_alpaca
-2. https://huggingface.co/datasets/mlabonne/harmful_behaviors
+1. Dataset of harmless prompts: https://huggingface.co/datasets/mlabonne/harmless_alpaca
+2. Dataset of harmful prompts:  https://huggingface.co/datasets/mlabonne/harmful_behaviors
 
 <ins>Resources Used</ins>
 
