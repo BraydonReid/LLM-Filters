@@ -74,7 +74,7 @@ harmful_tokens   = tokenize_instructions(tokenizer, harmful_inst_train[:n_inst_t
 harmless_tokens  = tokenize_instructions(tokenizer, harmless_inst_train[:n_inst_train])
 
 # here i am using a rather small batch size because the model is on CPU
-batch_size = 8
+batch_size = 16
 harmful_acts = defaultdict(list)
 harmless_acts = defaultdict(list)
 
@@ -131,7 +131,7 @@ activation_scored.sort(key=lambda x: abs(x.mean()), reverse=True)
 
 # tests the model with the harmful instructions
 # uses foward hooks to generate the tokens
-N_INST_TEST = 4
+N_INST_TEST = 20
 
 def _generate_with_hooks(model, tok, tokens, max_tokens_generated=64, fwd_hooks=[]):
     bsz, seq_len = tokens.shape
@@ -239,3 +239,8 @@ for i in range(N_INST_TEST):
     print("Baseline   :", base)
     print("Orthogonal :", orth)
     print("-"*50)
+    
+# saves the model
+SAVE_PATH = "./deepseek_r1_7b(no filter).pth"
+torch.save(model.state_dict(), SAVE_PATH)
+print(f"Saved HookedTransformer state dict to {SAVE_PATH}")
