@@ -16,4 +16,4 @@ datasets:
    
 papers researched:
 1. https://huggingface.co/blog/mlabonne/abliteration
-2. 
+2. https://paperswithcode.com/paper/derail-yourself-multi-turn-llm-jailbreak
