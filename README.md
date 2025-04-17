@@ -28,4 +28,8 @@ Uncensor any LLM with abliteration:
 Derail Yourself: Multi-turn LLM Jailbreak Attack through Self-discovered Clues: 
    
    https://paperswithcode.com/paper/derail-yourself-multi-turn-llm-jailbreak
+
+Prompt Infection: LLM-to-LLM Prompt Injection within Multi-Agent Systems
+
+   https://arxiv.org/abs/2410.07283?utm_source=chatgpt.com
    
