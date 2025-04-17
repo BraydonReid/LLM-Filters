@@ -20,6 +20,10 @@ from here you will need to create a modelfile and than use that model file to ad
 2. https://huggingface.co/datasets/mlabonne/harmful_behaviors
 
 <ins>Resources used</ins>
+
 https://huggingface.co/blog/mlabonne/abliteration
-Derail Yourself: Multi-turn LLM Jailbreak Attack through Self-discovered Clues: https://paperswithcode.com/paper/derail-yourself-multi-turn-llm-jailbreak
+
+Derail Yourself: Multi-turn LLM Jailbreak Attack through Self-discovered Clues: 
+   
+   https://paperswithcode.com/paper/derail-yourself-multi-turn-llm-jailbreak
    
